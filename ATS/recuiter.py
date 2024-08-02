@@ -1,6 +1,3 @@
-from dotenv import load_dotenv
-
-load_dotenv()
 import base64
 import streamlit as st
 import os
@@ -9,7 +6,9 @@ from PIL import Image
 import pdf2image
 import google.generativeai as genai
 
-# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# Command to run the AYS System
+# streamlit run app.py
+
 API_KEY='YOUR_KEY'
 genai.configure(api_key=API_KEY)
 
